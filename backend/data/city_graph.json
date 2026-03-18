@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "A": {"x": 0, "y": 0, "type": "walk"},
+    "B": {"x": 1, "y": 2, "type": "bus_stop"},
+    "C": {"x": 3, "y": 3, "type": "metro_station"},
+    "D": {"x": 4, "y": 1, "type": "bus_stop"},
+    "E": {"x": 6, "y": 2, "type": "walk"}
+  },
+
+  "edges": [
+    {"from": "A", "to": "B", "weight": 3, "mode": "walk"},
+    {"from": "B", "to": "C", "weight": 2, "mode": "bus"},
+    {"from": "C", "to": "D", "weight": 1, "mode": "metro"},
+    {"from": "D", "to": "E", "weight": 2, "mode": "walk"},
+    {"from": "B", "to": "D", "weight": 4, "mode": "bus"}
+  ]
+}
